@@ -21,16 +21,19 @@ nav{
     height: 75px;
     vertical-align: center;
     align-items: center;
-    background-color: rgb(251, 251, 251);
+    background-color: rgb(255, 255, 255);
     padding-bottom: 0px;
     
 }
+
+
+
 nav h1{
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
     padding-left: 110px;
-    gap: 5px;
+    gap : 5px;
     font-family: Calibri;
     font-size: 30px;
 }
@@ -422,4 +425,26 @@ h3{
 a{
     color: currentColor;
     text-decoration: none;
+}
+
+@media screen and (max-width:700px){
+    nav {
+        flex-direction: column;
+    }
+    nav ul{
+        padding-left: 2px;
+        gap: 10px;
+    }
+    .Nav-bar{
+        gap: 10px;
+    }
+    nav ul li{
+        align-items: center;
+        gap: 0px;
+    }
+    nav h1{
+        padding-left: 0px;
+    }
+
+    
 }
